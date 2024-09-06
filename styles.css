@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(
+    to bottom,
+    rgb(237, 32, 237),
+    rgb(245, 101, 241),
+    rgb(251, 144, 246),
+    rgb(254, 183, 249)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+body:webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  width: 85vw;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 50px;
+}
+
+.happy-birthday {
+  margin-bottom: 10px;
+  position: relative;
+}
+h2 {
+  background: linear-gradient(
+    45deg,
+    #ffffff 0%,
+    #f565f1 10%,
+    #f564f0 20%,
+    #f463ef 30%,
+    #f362ee 40%,
+    #f261ed 50%,
+    #f160ec 60%,
+    #f05feb 70%,
+    #ef5dea 80%,
+    #ee5ce9 90%,
+    #ed5be8 100%,
+    #ec5ae7 110%,
+    #eb59e6 120%,
+    #ea58e5 130%,
+    #e957e4 140%,
+    #e856e3 150%,
+    #e755e2 160%,
+    #e654e1 170%,
+    #e553e0 180%,
+    #e452df 190%,
+    #e351de 200%
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: 2s text-color ease infinite 0s;
+  font-weight: bold;
+  -webkit-filter: drop-shadow(
+					0px 0px 10px rgba(255, 255, 255, 0.8)
+				);
+				-moz-filter: drop-shadow(
+					0px 0px 10px rgba(255, 255, 255, 0.8)
+				);
+				-ms-filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.8));
+				-o-filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.8));
+				filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.8));
+                -webkit-text-stroke: .5px;
+        -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+@keyframes text-color {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: -200% 50%;
+  }
+}
+
+.message {
+  color: rgba(0, 0, 0, 1);
+  margin-top: 10px;
+  font-size: 16px;
+}
